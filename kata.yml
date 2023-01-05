@@ -1,0 +1,8 @@
+frame:
+  source: docs/sentinel2-gridpolygon.geojson
+  minzoom: 0
+  maxzoom: 5
+center:
+  source: docs/sentinel2-gridcenter.geojson
+  minzoom: 0
+  maxzoom: 5 

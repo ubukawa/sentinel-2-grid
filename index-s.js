@@ -21,4 +21,4 @@ for (const i in data.features){
 
 
 
-fs.writeFileSync('./output-s.geojson', JSON.stringify(output))
+fs.writeFileSync('./docs/sentinel2-gridpolygon.geojson', JSON.stringify(output))
