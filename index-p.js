@@ -16,7 +16,11 @@ for (const i in data.features){
     output.features[i].properties.name = data.features[i].properties.name2
     output.features[i].geometry = {}
     output.features[i].geometry.type = "Point"
-    output.features[i].geometry.coordinates = data.features[i].geometry.geometries[1].coordinates
+    if(data.features[i].geometry.geometries[1].type = "Point"){
+        output.features[i].geometry.coordinates = data.features[i].geometry.geometries[1].coordinates
+    } else if (data.features[i].geometry.geometries[2].type = "Point"){
+        output.features[i].geometry.coordinates = data.features[i].geometry.geometries[2].coordinates
+    }
 //    console.log(f.properties.name2)
 }
 
